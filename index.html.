@@ -5,73 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Les Fermiers Bigourdans</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
-<style>
-:root {
---dark: #2B2F31;
---red: #C44740;
---white: #FFFFFF;
---gray: #888C8F;
-}
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: 'Roboto', sans-serif;
-background-color: var(--dark);
-color: var(--white);
-line-height: 1.6;
-}
-
-header {
-background: url('image1.jpg') center/cover no-repeat;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
-}
-
-header img.logo {
-max-width: 180px;
-margin-bottom: 20px;
-}
-
-header h1 {
-font-family: 'Playfair Display', serif;
-font-size: 3rem;
-color: var(--white);
-}
-
-header p {
-font-size: 1.2rem;
-color: var(--gray);
-margin-top: 10px;
-}
-
-section {
-padding: 60px 20px;
-max-width: 1000px;
-margin: auto;
-}
-
-h2 {
-font-family: 'Playfair Display', serif;
-font-size: 2.5rem;
-color: var(--red);
-margin-bottom: 20px;
-}
-
-.section-text {
-font-size: 1.1rem;
-color: var(--white);
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
