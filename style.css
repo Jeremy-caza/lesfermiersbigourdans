@@ -1,1 +1,145 @@
+:root {
+--dark: #2B2F31;
+--red: #C44740;
+--white: #FFFFFF;
+--gray: #888C8F;
+}
 
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+background-color: var(--dark);
+color: var(--white);
+line-height: 1.6;
+}
+
+h1, h2, h3 {
+font-family: 'Playfair Display', serif;
+}
+
+a {
+color: var(--red);
+text-decoration: none;
+}
+
+header {
+background: url('image1.jpg') center/cover no-repeat;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+}
+
+header img.logo {
+max-width: 180px;
+margin-bottom: 20px;
+}
+
+header h1 {
+font-size: 3rem;
+color: var(--white);
+}
+
+header p {
+font-size: 1.2rem;
+color: var(--gray);
+margin-top: 10px;
+}
+
+Jeremy Pogut <jerepgtmy@gmail.com>
+	
+15:55 (il y a 0 minute)
+	
+À moi
+/* CSS PARTIE 2 : Sections, produits, animation, responsive */
+
+section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+h2 {
+font-size: 2.5rem;
+color: var(--red);
+margin-bottom: 20px;
+text-align: center;
+}
+
+.section-text {
+font-size: 1.1rem;
+color: var(--white);
+text-align: center;
+line-height: 1.8;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 30px;
+margin-top: 40px;
+}
+
+.grid div {
+text-align: center;
+}
+
+.grid img {
+width: 100%;
+border-radius: 8px;
+}
+
+.grid h3 {
+margin-top: 10px;
+color: var(--red);
+font-size: 1.4rem;
+}
+
+footer {
+background-color: var(--gray);
+color: var(--dark);
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+}
+
+.hidden {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 2.2rem;
+}
+
+header p {
+font-size: 1rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+.grid h3 {
+font-size: 1.2rem;
+}
+
+.section-text {
+font-size: 1rem;
+}
+}
