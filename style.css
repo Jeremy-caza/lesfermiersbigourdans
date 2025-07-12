@@ -143,3 +143,8 @@ font-size: 1.2rem;
 font-size: 1rem;
 }
 }
+
+.fade-separator {
+height: 40px;
+background: linear-gradient(to bottom, rgba(43, 47, 49, 1), rgba(43, 47, 49, 0));
+}
