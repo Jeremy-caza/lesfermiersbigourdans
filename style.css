@@ -28,8 +28,8 @@ text-decoration: none;
 }
 
 header {
-background: url('images/image1.jpg') center/cover no-repeat;
-height: 70vh; /* Réduit pour remonter le contenu */
+background: url('images/sombre.jpg') center/cover no-repeat;
+height: 70vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -39,19 +39,19 @@ padding: 40px 20px 30px;
 }
 
 header img.logo {
-max-width: 240px; /* Logo plus gros */
+max-width: 240px;
 height: auto;
 margin-bottom: 20px;
 }
 
 header h1 {
-font-size: 3rem; /* Titre plus gros */
+font-size: 3rem;
 color: var(--white);
 margin: 10px 0;
 }
 
 header p {
-font-size: 1.3rem; /* Sous-titre plus visible */
+font-size: 1.3rem;
 color: var(--gray);
 margin-bottom: 40px;
 }
