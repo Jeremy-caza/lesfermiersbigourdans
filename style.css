@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 
 body {
-font-family: 'Roboto', sans-serif;
+font-family: 'inter', sans-serif;
 background-color: var(--dark);
 color: var(--white);
 line-height: 1.6;
@@ -64,7 +64,7 @@ margin-top: 60px;
 }
 
 h2 {
-font-size: 2.5rem;
+font-size: 3rem;
 color: var(--red);
 margin-bottom: 20px;
 text-align: center;
@@ -75,6 +75,10 @@ font-size: 1.1rem;
 color: var(--white);
 text-align: justify;
 line-height: 1.8;
+}
+
+.center-text {
+  text-align: center; 
 }
 
 .grid {
@@ -96,7 +100,7 @@ border-radius: 8px;
 .grid h3 {
 margin-top: 10px;
 color: var(--red);
-font-size: 1.4rem;
+font-size: 1.8rem;
 }
 
 footer {
