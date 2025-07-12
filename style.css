@@ -28,36 +28,39 @@ text-decoration: none;
 }
 
 header {
-background: url('image1.jpg') center/cover no-repeat;
-height: 100vh;
+background: url('images/image1.jpg') center/cover no-repeat;
+height: 70vh; /* Réduit pour remonter le contenu */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-padding: 20px;
+padding: 40px 20px 30px;
 }
 
 header img.logo {
-max-width: 180px;
+max-width: 240px; /* Logo plus gros */
+height: auto;
 margin-bottom: 20px;
 }
 
 header h1 {
-font-size: 3rem;
+font-size: 3rem; /* Titre plus gros */
 color: var(--white);
+margin: 10px 0;
 }
 
 header p {
-font-size: 1.2rem;
+font-size: 1.3rem; /* Sous-titre plus visible */
 color: var(--gray);
-margin-top: 10px;
+margin-bottom: 40px;
 }
 
 section {
 padding: 60px 20px;
 max-width: 1000px;
 margin: auto;
+margin-top: 60px;
 }
 
 h2 {
@@ -136,8 +139,3 @@ font-size: 1.2rem;
 font-size: 1rem;
 }
 }
-
-section{
-	margin-top: 60px;
-}
-
