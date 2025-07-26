@@ -1,134 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Les Fermiers Bigourdans</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-<img src="images/logo1.png" alt="Logo Les Fermiers Bigourdans" class="logo">
-<h1>Le vrai goût, du producteur au consommateur</h1>
+<div class="container">
+<div class="logo">
+<img src="images/logo1.png" alt="Logo Les Fermiers Bigourdans">
+</div>
+<nav>
+<ul>
+<li><a href="#accueil">Accueil</a></li>
+<li><a href="#histoire">Notre Histoire</a></li>
+<li><a href="#produits">Nos Produits</a></li>
+<li><a href="#equipe">Notre équipe</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<div style="padding: 40px 20px 20px; text-align: center;">
-<p style="font-size: 2.5rem; color: var(--red); font-family: 'Playfair Display', serif;">
-Produits locaux, au service de votre assiette depuis 20XX
+<section class="banner" id="accueil">
+<div class="banner-text">
+<h1>Les fermiers Bigourdans</h1>
+<p>Depuis 2019, Le vrai goût, du producteur au consommateur</p>
+</div>
+</section>
+
+<section class="histoire" id="histoire">
+<div class="container">
+<h2>Notre Histoire</h2>
+<div class="histoire-content">
+<img src="images/paté.jpg" alt="Notre histoire">
+<p>
+Depuis 2019, nous proposons des viandes locales et artisanales sélectionnées avec soin. Trois amis, dont deux frères charcutiers de métier, ont uni leurs savoir-faire pour offrir aux habitants du 65 et des environs une boucherie à taille humaine, chaleureuse et authentique. Après des débuts à Tarbes, notre boucherie s’est installée à Ibos pour mieux vous servir.
 </p>
 </div>
-
-<div style="text-align: center; margin: 20px 0 60px;">
-<img src="images/image1.jpg" alt="Présentation" style="width: 100%; max-width: 800px; border-radius: 10px;">
 </div>
-
-<section>
-<h2>Notre histoire</h2>
-<p class="section-text">
-Depuis 2005, nous proposons des viandes locales et artisanales sélectionnées avec soin.
-Trois amis, dont deux frères charcutiers de métier, ont uni leurs savoir-faire pour offrir
-aux habitants du 65 et des environs une boucherie à taille humaine, chaleureuse et authentique.
-Après des débuts à Tarbes, notre boucherie s’est installée à Ibos pour mieux vous servir.
-</p>
 </section>
 
-<div style="text-align: center; margin: 40px 0;">
-<img src="images/paté.jpg" alt="Illustration" style="width: 100%; max-width: 800px; border-radius: 10px;">
+<section class="produits" id="produits">
+<div class="container">
+<h2>Nos Produits</h2>
+<div class="produits-grid">
+<div class="produit">
+<img src="images/image4.jpg" alt="Charcuterie">
+<h3>Boucherie Artisanale</h3>
+<p>Des recettes traditionnelles, sans additifs, préparées maison.</p>
 </div>
-
-<section>
-<h2>Nos produits</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
-<div style="text-align: center;">
-<img src="images/image3.jpg" alt="Boucherie" style="width:100%; border-radius: 8px;">
-<h3 style="margin-top: 10px; color: var(--red);">Boucherie</h3>
-<p class="section-text">Nos viandes locales, issues de circuits courts, sont découpées sur place avec passion.</p>
+<div class="produit">
+<img src="images/saucisses.jpg" alt="Viandes">
+<h3>Viandes de Qualité</h3>
+<p>Bœuf, agneau, veau, porc… sélectionnés en circuit court.</p>
 </div>
-<div style="text-align: center;">
-<img src="images/image4.jpg" alt="Charcuterie" style="width:100%; border-radius: 8px;">
-<h3 style="margin-top: 10px; color: var(--red);">Charcuterie</h3>
-<p class="section-text">Saucissons, jambons, pâtés... élaborés localement selon les recettes traditionnelles.</p>
+<div class="produit">
+<img src="images/confiture.jpg" alt="Épicerie">
+<h3>Épicerie Locale</h3>
+<p>Confitures, miels, bières et produits de la région.</p>
 </div>
-<div style="text-align: center;">
-<img src="images/image5.jpg" alt="Crèmerie" style="width:100%; border-radius: 8px;">
-<h3 style="margin-top: 10px; color: var(--red);">Crèmerie</h3>
-<p class="section-text">Fromages fermiers, yaourts artisanaux : toute la richesse de nos terroirs.</p>
-</div>
-<div style="text-align: center;">
-<img src="images/image6.jpg" alt="Fruits et légumes" style="width:100%; border-radius: 8px;">
-<h3 style="margin-top: 10px; color: var(--red);">Fruits & légumes</h3>
-<p class="section-text">Nos fruits et légumes sont sélectionnés avec soin, en privilégiant la fraîcheur, la saisonnalité et la proximité pour un goût authentique et naturel.</p>
-</div>
-  <div style="text-align: center;">
-<img src="images/boite.jpg" alt="Conserves" style="width:100%; border-radius: 8px;">
-<h3 style="margin-top: 10px; color: var(--red);">Conserves</h3>
-<p class="section-text">Retrouvez une sélection de conserves artisanales, avec des marques locales de qualité comme la Ferme Cazenave. Des recettes traditionnelles prêtes à savourer.</p>
 </div>
 </div>
 </section>
 
-<section>
-<h2 style="color: var(--red); text-align: center;">Notre équipe</h2>
-<div style="text-align: center;">
-<img src="images/image2.jpg" alt="Notre équipe" style="width: 100%; max-width: 600px; border-radius: 8px;">
-<p class="section-text">
-Chez Les Fermiers Bigourdans, ce ne sont pas seulement les produits qui font la différence, mais aussi les personnes derrière le comptoir. Plusieurs bouchers passionnés, disponibles, accueillants et toujours prêts à vous conseiller, vous servent au quotidien.
-<br><br>
-On ne prétend pas faire plus que notre métier, mais à force de vous entendre nous le dire, on finit par y croire : vous trouvez que notre équipe est chaleureuse, à l'écoute, et que nos conseils font la différence.
-<br><br>
-Alors oui, on le dit à notre tour, ça nous fait plaisir. Merci pour votre confiance, vos retours et votre fidélité.
-</p>
-</div>
-</section>
-
-  <section style="margin: 60px 0;">
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
-
-<div style="text-align: center; max-width: 120px;">
-<img src="images/employe1.jpg" alt="Employé 1" style="width: 100%; border-radius: 50%;">
-<h3 style="color: var(--red); margin: 10px 0 5px;">Boucher</h3>
-<p style="font-size: 0.9rem;">Vous écoute</p>
-</div>
-
-<div style="text-align: center; max-width: 120px;">
-<img src="images/employe2.jpg" alt="Employé 2" style="width: 100%; border-radius: 50%;">
-<h3 style="color: var(--red); margin: 10px 0 5px;">Directeur</h3>
-<p style="font-size: 0.9rem;">À votre service</p>
-</div>
-
-<div style="text-align: center; max-width: 120px;">
-<img src="images/employe3.jpg" alt="Employé 3" style="width: 100%; border-radius: 50%;">
-<h3 style="color: var(--red); margin: 10px 0 5px;">Vendeur</h3>
-<p style="font-size: 0.9rem;">Toujours dispo</p>
+<section class="equipe" id="equipe">
+<div class="container">
+<h2>Notre équipe</h2>
+<div class="plats-content">
+<img src="images/image2.jpg" alt="personnel">
+<p>Chez Les Fermiers Bigourdans, ce ne sont pas seulement les produits qui font la différence, mais aussi les personnes derrière le comptoir. Plusieurs bouchers passionnés, disponibles, accueillants et toujours prêts à vous conseiller, vous servent au quotidien.</p>
 </div>
 </div>
 </section>
 
-<section>
-<h2>Horaires d'ouverture</h2>
-<p class="section-text center-text">
-<strong>Mardi à jeudi :</strong> 9h – 12h30 / 15h – 19h<br>
-<strong>Vendredi et samedi :</strong> 9h – 19h<br>
-<strong>Adresse :</strong> 2 Chem de la Trav, 65420 Ibos
-</p>
-</section>
-
-  <div style="text-align: center; margin: 40px 0;">
-<img src="images/saucisses.jpg" alt="Horaires illustration" style="width: 100%; max-width: 800px; border-radius: 10px;">
+<section class="contact" id="contact">
+<div class="container">
+<h2>Contact & Horaires</h2>
+<p>📍 2 Chem de la Trav, 65420 Ibos</p>
+<p>📞 05 62 53 71 30</p>
+<p>🕒 Du mardi au jeudi : 9h00 – 12h30 / 15h00 – 19h00</p>
+<p>🕒 Vendredi et samedi : 9h00 – 19h00</p>
+<p>📩 lesfermiersbigourdans@gmail.com</p>
 </div>
-
-<section>
-<h2>Nous contacter</h2>
-<p class="section-text center-text">
-📞 <a href="tel:+3300000000" style="color: var(--white); text-decoration: underline;">05 62 53 71 30</a><br>
-📧 <a href="mailto:lesfermiersbigourdans@gmail.com" style="color: var(--white); text-decoration: underline;">lesfermiersbigourdans@gmail.com</a>
-</p>
 </section>
 
-<footer style="background-color: var(--gray); color: var(--dark); text-align: center; padding: 20px;">
-<p>&copy; 2025 Les Fermiers Bigourdans – Tous droits réservés</p>
+<footer>
+<div class="container">
+<p>&copy; 2025 Les Fermiers Bigourdans </p>
+</div>
 </footer>
 
 </body>
