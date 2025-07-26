@@ -238,6 +238,8 @@ nav ul li a:hover {
 }
 
 form {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 500px;
   margin: 40px auto 0;
   padding: 20px;
@@ -255,6 +257,7 @@ form label {
 
 form input,
 form textarea {
+  text-align: center;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -305,4 +308,29 @@ footer {
   #menu-toggle {
     display: block;
   }
+}
+
+.contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact p, .contact h3, .contact form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
 }
