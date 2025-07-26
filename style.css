@@ -287,30 +287,37 @@ html {
   scroll-behavior: smooth;
 }
 
-.equipe-photos .grid {
+.equipe-grid {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.grid-personnes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+.personne {
   text-align: center;
 }
 
-.equipe-photos img {
+.personne img {
   width: 100%;
-  max-width: 160px;
-  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
-  border-radius: 10px;
-  margin: auto;
 }
 
-.equipe-photos h3 {
+.personne h3 {
   margin-top: 10px;
-  font-size: 1.1rem;
-  color: #990000;
+  color: #C44740;
+  font-size: 18px;
 }
 
-.equipe-photos p {
-  font-size: 0.95rem;
+.personne p {
+  margin: 5px 0;
+  font-style: italic;
   color: #555;
 }
