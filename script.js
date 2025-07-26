@@ -21,3 +21,12 @@ const menu = document.getElementById('mobile-menu');
 toggle.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
+
+document.addEventListener('click', function(event) {
+  const isClickInsideMenu = document.getElementById('mobile-menu').contains(event.target);
+  const isClickOnToggle = document.getElementById('menu-toggle').contains(event.target);
+  
+  if (!isClickInsideMenu && !isClickOnToggle) {
+    document.getElementById('mobile-menu').classList.remove('show');
+  }
+});
