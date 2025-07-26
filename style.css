@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -70,13 +75,14 @@ text-align: center;
 
 .banner-text {
 background-color: #2b2f31; 
-padding: 0px;
+padding: 50px;
 border-radius: 10px;
+margin: auto; 
 }
 
 .banner-text h1 {
-font-size: 2.5rem;
-color: #fff;
+  font-size: 2.5rem;
+  color: #C44740;
 }
 
 .banner-text p {
