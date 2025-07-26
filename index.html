@@ -44,7 +44,7 @@
   </div>
 </section>
 
-<section class="histoire" id="histoire">
+<section class="histoire section-gris" id="histoire">
   <div class="container">
     <h2>Notre Histoire</h2>
     <div class="histoire-content">
@@ -61,7 +61,7 @@
   </div>
 </section>
 
-<section class="produits" id="produits">
+<section class="produits section-blanc" id="produits">
   <div class="container">
     <h2>Nos Produits</h2>
     <div class="produits-grid">
@@ -84,7 +84,7 @@
   </div>
 </section>
 
-<section class="equipe" id="equipe">
+<section class="equipe section gris" id="equipe">
   <div class="container">
     <h2>Notre équipe</h2>
     <div class="histoire-content">
@@ -99,16 +99,31 @@
   </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact section blanc" id="contact">
   <div class="container">
     <h2>Contact & Horaires</h2>
     <p>📍 2 Chem de la Trav, 65420 Ibos</p>
-    <p>📞 05 62 53 71 30</p>
+    <p>📞 <a href="tel:+33562537130">05 62 53 71 30</a></p>
+    <p>📩 <a href="mailto:lesfermiersbigourdans@gmail.com">lesfermiersbigourdans@gmail.com</a></p>
     <p>🕒 Du mardi au jeudi : 9h00 – 12h30 / 15h00 – 19h00</p>
     <p>🕒 Vendredi et samedi : 9h00 – 19h00</p>
-    <p>📩 lesfermiersbigourdans@gmail.com</p>
+
+    <h3>Envoyer un message</h3>
+    <form action="mailto:lesfermiersbigourdans@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Nom :</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
   </div>
 </section>
+
 
 <footer>
   <div class="container">
