@@ -217,3 +217,11 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 body {
 padding-top: 80px;
 }
+
+.section-blanc {
+  background-color: #ffffff;
+}
+
+.section-gris {
+  background-color: #eeeeee;
+}
