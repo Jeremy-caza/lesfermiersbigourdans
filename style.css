@@ -27,6 +27,14 @@ text-decoration: none;
 color: inherit;
 }
 
+a[href^="tel"],
+a[href^="mailto"] {
+  text-decoration: underline;
+  color: #990000; 
+  font-weight: bold;
+}
+
+
 .container {
 width: 90%;
 max-width: 1200px;
@@ -225,3 +233,46 @@ padding-top: 80px;
 .section-gris {
   background-color: #eeeeee;
 }
+
+form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #990000;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #990000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #c44740;
+}
+
