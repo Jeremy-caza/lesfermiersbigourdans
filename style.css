@@ -286,3 +286,31 @@ form button:hover {
 html {
   scroll-behavior: smooth;
 }
+
+.equipe-photos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.equipe-photos img {
+  width: 100%;
+  max-width: 160px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.equipe-photos h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #990000;
+}
+
+.equipe-photos p {
+  font-size: 0.95rem;
+  color: #555;
+}
