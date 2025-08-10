@@ -342,3 +342,9 @@ footer {
 .features .feature-tile{
   background:#f7f7f7; padding:10px 12px; border-radius:10px; font-weight:600;
 }
+
+/* Lien actif dans la nav (desktop + burger) */
+nav ul li a.active,
+#mobile-menu li a.active {
+  color: #990000;
+}
