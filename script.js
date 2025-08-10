@@ -30,3 +30,18 @@ document.addEventListener('click', function(event) {
     document.getElementById('mobile-menu').classList.remove('show');
   }
 });
+
+// Ferme le menu mobile quand on clique sur un lien
+document.querySelectorAll('#mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => menu.classList.remove('show'));
+});
+
+// (optionnel) surligner la page courante dans la nav
+(function () {
+  const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  document.querySelectorAll('nav a, #mobile-menu a').forEach(a => {
+    const href = a.getAttribute('href');
+    const target = href === '/' ? 'index.html' : href.replace(/^\//,'').toLowerCase();
+    if (target === current) a.classList.add('active');
+  });
+})();
