@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Accès – Les Fermiers Bigourdans</title>
+  <meta name="description" content="Accès, horaires, coordonnées et plan pour venir aux Fermiers Bigourdans à Ibos.">
+  <meta name="author" content="Les Fermiers Bigourdans">
+
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <style>
+    /* mini styles spécifiques à la page (optionnel) */
+    .map-full { width:100%; height:60vh; border:0; }
+    .contact-cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:20px; margin-top:20px; }
+    .contact-card { background:#f7f7f7; border-radius:10px; padding:16px; text-align:center; }
+    .contact-card h3 { margin:6px 0 8px; color:#990000; }
+    .btn-wide { display:inline-block; margin-top:10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img src="/images/logo1.png" alt="Les Fermiers Bigourdans"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/histoire.html">Notre Histoire</a></li>
+        <li><a href="/produits.html">Nos Produits</a></li>
+        <li><a href="/equipe.html">Notre équipe</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <ul id="mobile-menu" class="mobile-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/histoire.html">Notre Histoire</a></li>
+      <li><a href="/produits.html">Nos Produits</a></li>
+      <li><a href="/equipe.html">Notre équipe</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1) Google Maps plein largeur -->
+  <section class="section-blanc" style="padding:0;">
+    <!-- Remplace l'URL ci-dessous par ton "intégrer une carte" (Google Maps > Partager > Intégrer) -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4503.718194262294!2d0.02704837499513989!3d43.23881777913501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9d4375a6eabb9%3A0x96ce103c821db8ca!2sLES%20FERMIERS%20BIGOURDANS!5e1!3m2!1sfr!2sfr!4v1754846970278!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- 2) Infos pratiques (coordonnées, horaires, accès) -->
+  <section class="contact section-blanc" id="contact">
+    <div class="container">
+      <h2>Coordonnées & Accès</h2>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <h3>Adresse</h3>
+          <p>2 Chem de la Trav, 65420 Ibos</p>
+          <a class="btn btn-wide" href="https://maps.app.goo.gl/?q=2%20Chem%20de%20la%20Trav%2065420%20Ibos" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Horaires</h3>
+          <p>Mar–Jeu : 9h00–12h30 / 15h00–19h00<br>Ven–Sam : 9h00–19h00</p>
+        </div>
+
+      <div class="contact-card">
+  <h3>Infos utiles</h3>
+  <p>
+    🅿️ Parking gratuit<br>
+    ♿ Accès PMR (plain-pied)<br>
+    💳 Moyens de paiement : CB, espèces<br>
+    ✅ Mise sous vide sur demande<br>
+    🎄 Réservations pour les fêtes : <a href="tel:+33562537130">05&nbsp;62&nbsp;53&nbsp;71&nbsp;30</a><br>
+    📦 Préparation de commandes possible
+  </p>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Formulaire (ta version, nettoyée) -->
+  <section class="section-blanc">
+    <div class="container">
+      <h3>Envoyer un message</h3>
+
+      <form action="mailto:lesfermiersbigourdans@gmail.com?subject=Message%20depuis%20le%20site" method="post" enctype="text/plain">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="Nom" autocomplete="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="Email" autocomplete="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+
+      <!-- Alternative bouton direct (au cas où) :
+      <p style="margin-top:10px;">
+        <a class="btn" href="mailto:lesfermiersbigourdans@gmail.com?subject=Message%20depuis%20le%20site">Ou écrire via votre messagerie</a>
+      </p> -->
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Les Fermiers Bigourdans</p>
+    <div class="footer-links">
+      <a href="/mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/lesfermiersbigourdans" target="_blank">
+      <img src="/images/insta.png" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com/p/Les-fermiers-bigourdans-100057309585659" target="_blank">
+      <img src="/images/facebook.png" alt="Facebook" />
+    </a>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
