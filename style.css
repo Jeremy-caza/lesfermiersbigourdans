@@ -366,3 +366,24 @@ nav ul li a.active,
 .footer-links { margin-top: 8px; }
 .footer-links a { color: #fff; text-decoration: underline; }
 .footer-links a:hover { color: #c44740; }
+
+.section-air { 
+  padding: 90px 0;           
+}
+.section-air h2 { 
+  margin-bottom: 28px;      
+}
+.section-air p { 
+  margin-bottom: 22px;      
+}
+.section-air .section-cta { 
+  margin-top: 28px;         
+}
+.section-air .btn { 
+  margin: 0 12px;      
+}
+
+@media (max-width: 768px){
+  .section-air { padding: 70px 0; }
+  .section-air .btn { display:inline-block; margin:8px 8px; }
+}
