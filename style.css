@@ -9,7 +9,7 @@ body {
   line-height: 1.6;
   color: #222;
   background-color: #fff;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 h1, h2, h3 {
@@ -387,3 +387,5 @@ nav ul li a.active,
   .section-air { padding: 70px 0; }
   .section-air .btn { display:inline-block; margin:8px 8px; }
 }
+.section-pad { padding: 60px 0; }
+@media (max-width:768px){ .section-pad { padding: 50px 0; } }
